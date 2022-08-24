@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff: 'Rubik', sans-serif;
+  --green: #07b107;
+  --red: #ff0000;
+  --blue: #00bdfc;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: var(--ff);
+}
+
+main {
+  width: 100%;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+main .container h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+main .container .count {
+  font-size: 2.3rem;
+}
+
+main .container .count.green {
+  color: var(--green);
+}
+
+main .container .count.red {
+  color: var(--red);
+}
+
+main .container .count.blue {
+  color: var(--blue);
+}
+
+main .container .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+main .container .options .btn {
+  padding: 7px 3px;
+  background: transparent;
+  border-radius: 4px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .container .options .btn:hover {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
