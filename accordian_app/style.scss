@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Rubik', sans-serif;
+}
+.none{
+    display: none;
+    animation: fade .4s ease forwards;
+}
+
+.container{
+    width: 1500px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: lightblue;
+   padding: 10px 5px;
+
+}
+header{
+    margin: 0px 0px 20px 0px;
+    h1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(255, 182, 47);
+    }
+}
+
+main{
+    .question-container{
+        background: white;
+        width: calc(100vw - 50vw);
+        padding: 10px 0px 0px;
+        margin: 20px 0px ;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+        height: 10vh;
+        animation: fade .4s ease forwards;
+        @media screen and (max-width: 768px) {
+            width: calc(100vw - 5vw);
+        }
+
+        .question__header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding:10px;
+            border-bottom: 1px solid black;
+
+            h2{
+                font-size: 1.4rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                @media screen and (max-width: 768px) {
+                   font-size: 1.1rem;
+                }
+            }
+            i{
+                border: 2px solid rgb(255, 182, 47);
+                border-radius:  5px;
+                padding: 7px;
+                cursor: pointer;
+                animation: rotate .4s ease forwards;
+            }
+        }
+
+        .question__body{
+            padding: 10px 5px;
+            animation: fade .4s ease forwards;
+            p{
+                line-height: 1.6;
+            }
+        }
+    }
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        height: 10vh;
+    }to{
+        opacity: 1;
+        height: auto;
+    }
+}
+@keyframes rotate {
+    from{
+     transform: rotate(180deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
