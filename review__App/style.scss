@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --ff : 'Rubik', sans-serif;
+    --green : #07b107;
+    --red: #ff0000;
+    --blue : #00bdfc;
+}
+img{
+    width: 200px;
+}
+body{
+ margin: 0 auto;
+ font-family: var(--ff);
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: rgb(128, 212, 241);
+}
+
+main {
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fade .5s ease-in-out forwards;
+
+    h1{
+        font-size: 2rem;
+        font-weight: 550;
+        text-align: center;
+        color: #ffff;
+        border-bottom: 3px solid white;
+        margin: 10px 0px;
+    }
+
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        
+        .review__container{
+            text-align: center;
+            max-width: calc(100vw - 40vw);
+            align-items: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+            padding: 10px 0;
+            animation: fade .5s ease-in-out forwards;
+
+            @media  screen and (max-width: 768px) {
+                max-width: 100%;
+                margin: 0 10px;
+            }
+
+            .review__header{
+                margin: 10px auto;
+            animation: fade .5s ease-in-out forwards;
+
+                img{
+                    width:100px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .review__body{
+                padding: 10px;
+                animation: fade .5s ease-in-out forwards;
+
+                .review__body__info{
+                 display: grid;   
+                 place-content: center;
+                    animation: fade .5s ease-in-out forwards;
+                    min-height: 30vh;
+
+                   
+                    h2,
+                    h3{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                    h2{
+                        font-weight: 600;
+                    }
+                    .occupation{
+                        color: rgb(22, 129, 164);
+                        font-size: 1rem;
+                        margin: 5px 0px;
+                    }
+                    .review{
+                        margin: 10px auto;
+                        max-width: calc(100% - 20%);
+                        line-height: 1.6;
+                        font-size: 1.1rem;
+                    }
+                }
+                .review__btn{
+                    text-align: center;
+                    display: flex;
+                    gap: 30px;
+                    cursor: pointer;
+                    justify-content: center;
+                    margin: 10px 0px;
+            animation: fade .5s ease-in-out forwards;
+
+
+                    .fa-solid{
+                      font-size: 1.5rem;
+                      color: rgb(38, 178, 225);
+                    }
+                }
+            }
+            
+        }
+    }
+    button{
+        padding: 10px 7px ;
+        background: transparent;
+        border: 2px solid  rgb(38, 178, 225);
+        color: rgb(38, 178, 225);
+        font-size: 1rem;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        transition: all .3s ease ;
+        &:hover{
+            background: rgb(38, 178, 225);
+            color: white;
+        }
+    }
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff: 'Rubik', sans-serif;
+  --green: #07b107;
+  --red: #ff0000;
+  --blue: #00bdfc;
+}
+
+img {
+  width: 200px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--ff);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #80d4f1;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+  color: #ffff;
+  border-bottom: 3px solid white;
+  margin: 10px 0px;
+}
+
+main section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+main section .review__container {
+  text-align: center;
+  max-width: calc(100vw - 40vw);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+}
+
+@media screen and (max-width: 768px) {
+  main section .review__container {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+}
+
+main section .review__container .review__header {
+  margin: 10px auto;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+}
+
+main section .review__container .review__header img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+main section .review__container .review__body {
+  padding: 10px;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+}
+
+main section .review__container .review__body .review__body__info {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+  min-height: 30vh;
+}
+
+main section .review__container .review__body .review__body__info h2,
+main section .review__container .review__body .review__body__info h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+main section .review__container .review__body .review__body__info h2 {
+  font-weight: 600;
+}
+
+main section .review__container .review__body .review__body__info .occupation {
+  color: #1681a4;
+  font-size: 1rem;
+  margin: 5px 0px;
+}
+
+main section .review__container .review__body .review__body__info .review {
+  margin: 10px auto;
+  max-width: calc(100% - 20%);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+main section .review__container .review__body .review__btn {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0px;
+  -webkit-animation: fade .5s ease-in-out forwards;
+          animation: fade .5s ease-in-out forwards;
+}
+
+main section .review__container .review__body .review__btn .fa-solid {
+  font-size: 1.5rem;
+  color: #26b2e1;
+}
+
+main button {
+  padding: 10px 7px;
+  background: transparent;
+  border: 2px solid #26b2e1;
+  color: #26b2e1;
+  font-size: 1rem;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main button:hover {
+  background: #26b2e1;
+  color: white;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
