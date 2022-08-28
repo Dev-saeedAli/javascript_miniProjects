@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --FF-Family: 'Kanit', sans-serif;
+  --Bg-Color: rgb(244, 251, 255);
+  --orange: orange;
+  --gold: #c0a600;
+  --blue: blue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--FF-Family);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  background: var(--Bg-Color);
+  min-height: 100vh;
+  max-width: 1500px;
+  width: 100%;
+  padding: 5px;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1.8px;
+  -webkit-text-decoration: underline var(--orange) wavy;
+          text-decoration: underline var(--orange) wavy;
+}
+
+main {
+  margin: 16px auto;
+  text-align: center;
+}
+
+main .filter__section .filters {
+  text-transform: capitalize;
+  margin: 0 10px 20px;
+  padding: 7px 3px;
+  background: transparent;
+  border-radius: 5px;
+  width: 100px;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+main .filter__section .filters.active {
+  border-color: var(--blue);
+}
+
+main .menu__section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40%)[2];
+      grid-template-columns: repeat(2, 40%);
+  place-content: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main .menu__section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+main .menu__section .menuItems {
+  margin: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .menu__section .menuItems .menuItems__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+main .menu__section .menuItems .menuItems__img img {
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+main .menu__section .menuItems .menus__details {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px 5px 0px 10px;
+}
+
+main .menu__section .menuItems .menus__details header {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid var(--orange);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+main .menu__section .menuItems .menus__details header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main .menu__section .menuItems .menus__details header .price {
+  color: var(--orange);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main .menu__section .menuItems .menus__details p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
