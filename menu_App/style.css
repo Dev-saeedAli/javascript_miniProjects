@@ -30,6 +30,10 @@ body {
           justify-content: center;
 }
 
+.none {
+  display: none;
+}
+
 .container {
   background: var(--Bg-Color);
   min-height: 100vh;
@@ -69,7 +73,8 @@ main .filter__section .filters {
 }
 
 main .filter__section .filters.active {
-  border-color: var(--blue);
+  background: var(--orange);
+  color: white;
 }
 
 main .menu__section {
@@ -93,6 +98,10 @@ main .menu__section .menuItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main .menu__section .menuItems.none {
+  display: none;
 }
 
 main .menu__section .menuItems .menuItems__img {

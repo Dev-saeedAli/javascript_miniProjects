@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 // base
 :root{
     --FF-Family : 'Kanit', sans-serif;
@@ -23,6 +22,9 @@ body{
     font-family: var(--FF-Family);
     display: flex;
     justify-content: center;
+}
+.none{
+    display: none;
 }
 .container{
     background: var(--Bg-Color);
@@ -61,7 +63,8 @@ main{
             font-size: 1.3rem;
             cursor: pointer;
             &.active{
-                border-color: var(--blue);
+                background: var(--orange);
+                color: white;
             }
         }
     }
@@ -77,6 +80,9 @@ main{
         .menuItems{
             margin: 15px 0px;
             display: flex;
+            &.none{
+                display: none;
+            }
             
             .menuItems__img{
                 display: flex;
